@@ -3,7 +3,7 @@ import "./App.css";
 const App = () => {
   return (
     <>
-      <p>START PROJECT STRUCTURE</p>
+      <p>DEVELOP PROJECT STRUCTURE</p>
     </>
   );
 };

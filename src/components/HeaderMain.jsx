@@ -4,9 +4,9 @@ import searchImg from "../images/search.svg";
 import cartImg from "../images/shopping-cart.svg";
 import React from "react";
 
-const Header = () => {
+const HeaderMain = () => {
   return (
-    <div className="header">
+    <div className="header" id="headerSection">
       <div className="headerLeft">
         <button>
           <img src={userImg} alt="user" />
@@ -27,4 +27,4 @@ const Header = () => {
   );
 };
 
-export { Header };
+export { HeaderMain };

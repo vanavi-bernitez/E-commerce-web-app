@@ -1,11 +1,26 @@
 import "./App.css";
-import { Header } from "./components/Header";
+import { HeaderMain } from "./components/HeaderMain";
+import { HeaderMenu } from "./components/HeaderMenu";
+import { Shop } from "./components/Shop";
+import { About } from "./components/About";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-      <Header />
-    </>
+    <Router>
+      <>
+        <header>
+          <HeaderMain />
+          <HeaderMenu />
+        </header>
+
+        <Shop />
+
+        <About />
+
+      </>
+    </Router>
   );
 };
 

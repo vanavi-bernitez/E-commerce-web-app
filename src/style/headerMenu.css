@@ -1,0 +1,22 @@
+.headerMenu {
+  background-color: #e4e4e4;
+  height: 10vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.headerMenu ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.headerMenu li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: black;
+}

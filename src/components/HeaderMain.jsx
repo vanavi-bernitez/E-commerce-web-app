@@ -1,4 +1,4 @@
-import "../style/header.css";
+import "../style/headerMain.css";
 import userImg from "../images/user.svg";
 import searchImg from "../images/search.svg";
 import cartImg from "../images/shopping-cart.svg";

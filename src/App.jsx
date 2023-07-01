@@ -1,10 +1,26 @@
 import "./App.css";
+import { HeaderMain } from "./components/HeaderMain";
+import { HeaderMenu } from "./components/HeaderMenu";
+import { Shop } from "./components/Shop";
+import { About } from "./components/About";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-      <p>DEVELOP PROJECT STRUCTURE</p>
-    </>
+    <Router>
+      <>
+        <header>
+          <HeaderMain />
+          <HeaderMenu />
+        </header>
+
+        <Shop />
+
+        <About />
+
+      </>
+    </Router>
   );
 };
 

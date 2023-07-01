@@ -1,0 +1,48 @@
+.headerMain {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerLeft {
+  width: 20vw;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.headerRight {
+  width: 20vw;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.headerCenter {
+  display: grid;
+  place-items: center;
+  width: 60vw;
+  height: 10vh;
+}
+
+.headerCenter p {
+  font-family: "Poppins", sans-serif;
+  font-size: 250%;
+  font-weight: 800;
+  margin: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+  margin: 1em;
+}
+
+button:hover {
+  border-radius: 1em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}

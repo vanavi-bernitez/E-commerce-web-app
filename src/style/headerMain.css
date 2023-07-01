@@ -1,5 +1,5 @@
 .headerMain {
-  height: 20vh;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,6 +28,7 @@
 
 .headerCenter p {
   font-family: "Poppins", sans-serif;
+  color: black;
   font-size: 250%;
   font-weight: 800;
   margin: 0;

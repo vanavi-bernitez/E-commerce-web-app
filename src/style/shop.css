@@ -1,0 +1,17 @@
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  border: solid green;
+}
+
+.item {
+  width: calc(100% / 6);
+  border: solid salmon;
+}
+
+.item p {
+  color: black;
+}

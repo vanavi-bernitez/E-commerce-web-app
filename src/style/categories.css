@@ -1,0 +1,9 @@
+.categories {
+  background-image: url("../images/categories.jpg");
+  height: 40vh;
+  background-position: 50% 20%;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}

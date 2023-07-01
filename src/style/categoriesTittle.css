@@ -1,0 +1,19 @@
+.categoriesTittle {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  margin: 0;
+  font-size: 300%;
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: beige;
+}

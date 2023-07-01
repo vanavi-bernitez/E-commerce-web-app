@@ -1,5 +1,4 @@
-.header {
-  width: 100vw;
+.headerMain {
   height: 20vh;
   display: flex;
   justify-content: center;
@@ -28,7 +27,7 @@
 }
 
 .headerCenter p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 250%;
   font-weight: 800;
   margin: 0;

@@ -6,7 +6,7 @@ import React from "react";
 
 const HeaderMain = () => {
   return (
-    <div className="header" id="headerSection">
+    <div className="headerMain" id="headerSection">
       <div className="headerLeft">
         <button>
           <img src={userImg} alt="user" />

@@ -11,6 +11,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   const [products, setProducts] = useState([]);
+  const [category, setCategory] = useState("");
+
+  const handleSetCategory = (idCategory) => {
+    setCategory(idCategory);
+  };
 
   const getProducts = async () => {
     try {
@@ -25,6 +30,8 @@ const App = () => {
     getProducts();
   }, []);
 
+  console.log(category);
+
   return (
     <>
       <header>
@@ -32,7 +39,7 @@ const App = () => {
         <HeaderMenu />
       </header>
 
-      <Categories />
+      <Categories setCategory={handleSetCategory} />
 
       <Shop products={products} />
 

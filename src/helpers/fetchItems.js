@@ -1,7 +1,7 @@
-const fetchItems = async (category) => {
+const fetchItems = async (query) => {
   try {
     const response = await fetch(
-      `https://fakestoreapi.com/products/${category}?limit=10`
+      `https://fakestoreapi.com/products/${query}?limit=10`
     );
     const data = await response.json();
     return data;

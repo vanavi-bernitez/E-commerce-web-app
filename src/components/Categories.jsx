@@ -3,11 +3,11 @@ import { CategoriesTittle } from "./CategoriesTittle";
 import { CategoriesMenu } from "./CategoriesMenu";
 import React from "react";
 
-const Categories = () => {
+const Categories = ({ setCategory }) => {
   return (
     <div className="categories">
       <CategoriesTittle />
-      <CategoriesMenu />
+      <CategoriesMenu setCategory={setCategory} />
     </div>
   );
 };

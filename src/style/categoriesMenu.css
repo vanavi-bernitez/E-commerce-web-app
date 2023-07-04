@@ -20,10 +20,10 @@
   min-width: min-content;
   border: 2px solid rgba(255, 250, 215, 0.3);
   border-left: none;
-  /* in next feature move to <a> tag the next styles */
   font-family: "Roboto", sans-serif;
   color: beige;
   font-size: large;
+  cursor: pointer;
 }
 
 .categoriesMenu li:hover {

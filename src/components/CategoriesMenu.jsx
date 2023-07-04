@@ -8,6 +8,7 @@ const CategoriesMenu = ({ setCategory }) => {
   return (
     <div className="categoriesMenu">
       <ul>
+        <li onClick={() => handleCategoryClick("")}>All</li>
         <li onClick={() => handleCategoryClick("category/electronics")}>
           Electronics
         </li>

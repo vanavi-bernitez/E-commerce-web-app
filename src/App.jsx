@@ -12,9 +12,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   const [products, setProducts] = useState([]);
+  const [allProducts, setAllProducts] = useState([]);
   const [category, setCategory] = useState("");
   const [product, setProduct] = useState({});
   const [isSeeMoreClicked, setIsSeeMoreClicked] = useState(false);
+  const [cartCount, setCartCount] = useState(0);
 
   const handleSetCategory = (idCategory) => {
     setCategory(idCategory);
@@ -28,10 +30,13 @@ const App = () => {
     setIsSeeMoreClicked(isClicked);
   };
 
+  const handleSetCartCount = (count) => {
+    setCartCount(count);
+  };
+
   const getProducts = async (categoryURL) => {
     try {
       const productsFetched = await fetchItems(categoryURL);
-      //ternary is clicked true fetch productId
 
       setProducts(productsFetched);
     } catch (error) {
@@ -43,10 +48,16 @@ const App = () => {
     getProducts(category);
   }, [category]);
 
+  useEffect(() => {
+    setAllProducts(products);
+  }, []);
+
+  console.log(allProducts);
+
   return (
     <>
       <header>
-        <HeaderMain />
+        <HeaderMain cartCount={cartCount} />
         <HeaderMenu />
       </header>
 
@@ -62,6 +73,7 @@ const App = () => {
         <ProductModal
           product={product}
           setIsSeeMoreClicked={handleSetIsSeeMoreClicked}
+          setCartCount={handleSetCartCount}
         />
       )}
 

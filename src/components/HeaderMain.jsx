@@ -4,7 +4,10 @@ import searchImg from "../images/search.svg";
 import cartImg from "../images/shopping-cart.svg";
 import React from "react";
 
-const HeaderMain = () => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+
+const HeaderMain = ({ cartCount }) => {
   return (
     <div className="headerMain" id="headerSection">
       <div className="headerLeft">
@@ -19,9 +22,22 @@ const HeaderMain = () => {
         <button>
           <img src={searchImg} alt="search" />
         </button>
-        <button>
-          <img src={cartImg} alt="shop cart" />
-        </button>
+        <span class="fa-layers fa-fw">
+          <FontAwesomeIcon
+            icon={faCartShopping}
+            size="xl"
+            style={{ color: "#9f9f9f" }}
+          />
+
+          {cartCount > 0 && (
+            <span
+              class="fa-layers-counter fa-3x"
+              style={{ background: "rgba(227,142,25,255)" }}
+            >
+              {cartCount}
+            </span>
+          )}
+        </span>
       </div>
     </div>
   );

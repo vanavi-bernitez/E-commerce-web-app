@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .headerLeft {
@@ -34,7 +35,7 @@
   margin: 0;
 }
 
-button {
+.headerMain button {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -43,7 +44,7 @@ button {
   margin: 1em;
 }
 
-button:hover {
+.headerMain button:hover {
   border-radius: 1em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }

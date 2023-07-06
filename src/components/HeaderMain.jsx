@@ -22,7 +22,7 @@ const HeaderMain = ({ cartCount }) => {
         <button>
           <img src={searchImg} alt="search" />
         </button>
-        <span class="fa-layers fa-fw">
+        <span class="cartLogo fa-layers fa-fw">
           <FontAwesomeIcon
             icon={faCartShopping}
             size="xl"

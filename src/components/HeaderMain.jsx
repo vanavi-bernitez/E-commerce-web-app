@@ -22,7 +22,7 @@ const HeaderMain = ({ cartCount }) => {
         <button>
           <img src={searchImg} alt="search" />
         </button>
-        <span class="cartLogo fa-layers fa-fw">
+        <span className="cartLogo fa-layers fa-fw">
           <FontAwesomeIcon
             icon={faCartShopping}
             size="xl"
@@ -31,7 +31,7 @@ const HeaderMain = ({ cartCount }) => {
 
           {cartCount > 0 && (
             <span
-              class="fa-layers-counter fa-3x"
+              className="fa-layers-counter fa-3x"
               style={{ background: "rgba(227,142,25,255)" }}
             >
               {cartCount}

@@ -6,8 +6,9 @@
 }
 
 .item {
-  width: 250px;
-  height: 310px;
+  width: calc(100% / 6);
+  min-width: 280px;
+  height: 320px;
   margin: 5px;
 }
 

@@ -6,9 +6,12 @@ import { Shop } from "./components/Shop";
 import { About } from "./components/About";
 import { ProductModal } from "./components/ProductModal";
 import { fetchItems } from "./helpers/fetchItems";
+import Modal from "react-modal";
 
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+Modal.setAppElement("#root");
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -69,13 +72,12 @@ const App = () => {
         setIsSeeMoreClicked={handleSetIsSeeMoreClicked}
       />
 
-      {isSeeMoreClicked && (
-        <ProductModal
-          product={product}
-          setIsSeeMoreClicked={handleSetIsSeeMoreClicked}
-          setCartCount={handleSetCartCount}
-        />
-      )}
+      <ProductModal
+        product={product}
+        setIsSeeMoreClicked={handleSetIsSeeMoreClicked}
+        setCartCount={handleSetCartCount}
+        isSeeMoreClicked={isSeeMoreClicked}
+      />
 
       <About />
     </>

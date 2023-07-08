@@ -46,3 +46,8 @@
   margin: 0 1em;
   cursor: pointer;
 }
+
+.buttons #seeMore {
+  background-color: transparent;
+  border-radius: 50%;
+}

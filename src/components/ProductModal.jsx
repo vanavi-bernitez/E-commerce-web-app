@@ -41,12 +41,13 @@ const ProductModal = ({
           borderRadius: "2em",
           outline: "none",
           padding: "20px",
-          width: "60vw",
+          width: "50vw",
           height: "50vh",
+          display: "grid",
+          placeItems: "center",
         },
       }}
     >
-      <button onClick={handleSeeMoreClick}>x</button>
       <div className="productContainer">
         <div className="imgModalContainer">
           <img src={product.image} alt="e-commerce product" />
@@ -58,6 +59,9 @@ const ProductModal = ({
             Add
           </button>
         </div>
+      </div>
+      <div className="closeBtn">
+        <button onClick={handleSeeMoreClick}>x</button>
       </div>
     </ReactModal>
   );

@@ -1,4 +1,5 @@
 import "../style/shop.css";
+import moreDots from "../images/moreDots.svg";
 
 const Shop = ({ products, setProduct, setIsSeeMoreClicked }) => {
   const storeItems = products.map((product) => {
@@ -23,7 +24,7 @@ const Shop = ({ products, setProduct, setIsSeeMoreClicked }) => {
         <div className="buttons">
           <button id="buy">Buy</button>
           <button id="seeMore" onClick={() => handleSeeMoreClick(product)}>
-            See More
+            <img src={moreDots} alt="more horizontal" />
           </button>
         </div>
       </div>

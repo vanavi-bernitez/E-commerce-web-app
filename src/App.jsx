@@ -15,7 +15,7 @@ Modal.setAppElement("#root");
 
 const App = () => {
   const [products, setProducts] = useState([]);
-  const [allProducts, setAllProducts] = useState([]);
+  // const [allProducts, setAllProducts] = useState([]);
   const [category, setCategory] = useState("");
   const [product, setProduct] = useState({});
   const [isSeeMoreClicked, setIsSeeMoreClicked] = useState(false);
@@ -51,11 +51,11 @@ const App = () => {
     getProducts(category);
   }, [category]);
 
-  useEffect(() => {
-    setAllProducts(products);
-  }, []);
+  // useEffect(() => {
+  //   setAllProducts(products);
+  // }, []);
 
-  console.log(allProducts);
+  // console.log(allProducts);
 
   return (
     <>

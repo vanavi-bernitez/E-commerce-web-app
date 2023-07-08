@@ -1,34 +1,44 @@
-p {
+.descriptionModalContainer p {
   color: black;
 }
 
-.seeMoreModal {
-  background-color: blue;
+.productContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.overlaySeeMoreModal {
-  background-color: aquamarine;
+.imgModalContainer {
+  height: 40vh;
+  width: 40vw;
 }
 
-/* .ReactModal__Body--open,
-.ReactModal__Html--open {
-  display: grid;
-  place-items: center;
-} */
-
-/* .ReactModal__Overlay {
-  opacity: 0;
-  transition: opacity 300ms ease-in-out;
+.imgModalContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
-.ReactModal__Overlay--after-open {
-  opacity: 1;
+.descriptionModalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  height: 40vh;
+  width: 60vw;
+  border-radius: 2em;
+  background-color: rgba(255, 250, 215, 0.7);
 }
 
-.ReactModal__Overlay--before-close {
-  opacity: 0;
+.descriptionModalContainer h3 {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: black;
 }
 
-.ReactModal__Content {
-  height: 50vh;
-} */
+.rightAlign {
+  margin-left: auto;
+  text-align: right;
+  border: solid orangered;
+}

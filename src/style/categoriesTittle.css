@@ -13,7 +13,8 @@ h3 {
   color: whitesmoke;
 }
 
-p {
+.categoriesTittle p {
   font-family: "Roboto", sans-serif;
   color: beige;
+  font-size: 130%;
 }

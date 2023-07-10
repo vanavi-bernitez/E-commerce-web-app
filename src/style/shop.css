@@ -9,7 +9,10 @@
   width: calc(100% / 6);
   min-width: 280px;
   height: 320px;
-  margin: 5px;
+  margin-top: 15px;
+  border-radius: 1em;
+  border: solid 1px #e4e4e4;
+  box-shadow: 0 2px 5px rgba(159, 159, 159, 0.5);
 }
 
 .imgContainer {
@@ -28,6 +31,7 @@
 }
 
 .item p {
+  font-family: "Roboto", sans-serif;
   color: black;
   margin: 5px;
 }

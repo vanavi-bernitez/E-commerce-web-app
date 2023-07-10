@@ -1,6 +1,9 @@
 import "../style/productModal.css";
-import React from "react";
+import React, { useState } from "react";
 import ReactModal from "react-modal";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 const ProductModal = ({
   product,
@@ -8,6 +11,8 @@ const ProductModal = ({
   setCartCount,
   isSeeMoreClicked,
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   const handleSeeMoreClick = () => {
     setIsSeeMoreClicked(false);
   };
@@ -54,10 +59,29 @@ const ProductModal = ({
         </div>
         <div className="descriptionModalContainer">
           <h3>{product.title}</h3>
-          <p className="rightAlign">{product.description}</p>
-          <button className="rightAlign" onClick={handleAddClick}>
-            Add
-          </button>
+          <p className=" productDescription">{product.description}</p>
+          <div className="priceAdd">
+            <p>$ {product.price}</p>
+            <button
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              onClick={handleAddClick}
+            >
+              {isHovered ? (
+                <FontAwesomeIcon
+                  icon={faCartShopping}
+                  bounce
+                  style={{ color: "#FFF" }}
+                />
+              ) : (
+                <FontAwesomeIcon
+                  icon={faCartShopping}
+                  style={{ color: "#FFF" }}
+                />
+              )}
+              ADD TO CART
+            </button>
+          </div>
         </div>
       </div>
       <div className="closeBtn">

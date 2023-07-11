@@ -61,7 +61,7 @@ const ProductModal = ({
           <h3>{product.title}</h3>
           <p className=" productDescription">{product.description}</p>
           <div className="priceAdd">
-            <p>$ {product.price}</p>
+            <p>$ {product.price.toFixed(2)}</p>
             <button
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
